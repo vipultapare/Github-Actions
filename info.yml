@@ -8,4 +8,9 @@ hobbies :
     - Gaming
     - Riding
     - Guitar
+experience :
+    devops :
+         linux : 2
+         docker : 1
+         kubernates : 1
     

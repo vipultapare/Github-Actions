@@ -34,4 +34,5 @@ jobs:
 
       # Deploy
       - name: Deploye to github pages
+        id: deployment
         uses: actions/deploy-pages@v4

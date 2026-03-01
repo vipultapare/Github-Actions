@@ -1,0 +1,21 @@
+name: Print My Name
+
+on:
+  push:
+    branches: [main]
+
+env:
+  MY_NAME: "Vipul"   # Change your name here only
+
+jobs:
+  print-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print My Name
+        run: echo "Hello, My Name is $MY_NAME"
+
+  details:
+    runs-on: ubuntu-latest
+    steps:
+      - name : Show what is the version of python
+        run : python --version

@@ -1,0 +1,16 @@
+name: Path workflow to run when code changes to html
+
+on:
+  push:
+    branches: [main]
+    paths:                # ✅ paths is INSIDE push
+      - '**.html'
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello to users
+        run: echo "Hello Dosto"
+      - name: Say hello to user name
+        run: echo "Hello $USER"

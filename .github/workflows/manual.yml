@@ -1,0 +1,17 @@
+name: Manual Trigger
+
+on:
+  workflow_dispatch:
+
+jobs:
+  code:
+    runs-on: ubuntu-latest   # ✅ runs-on inside the job
+    steps:
+      - name: Checkout code
+        run: echo "Code clone from github"
+
+  build:
+    runs-on: ubuntu-latest   # ✅ runs-on inside every job
+    steps:
+      - name: Build Docker Container
+        run: echo "Docker build"
